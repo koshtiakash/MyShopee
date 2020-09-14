@@ -7,6 +7,10 @@ import { UserregComponent } from './userreg/userreg.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegsucessComponent } from './regsucess/regsucess.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentComponent } from './payment/payment.component';
+import { OrderplacedComponent } from './orderplaced/orderplaced.component';
 
 const routes: Routes = [
   {
@@ -36,6 +40,22 @@ const routes: Routes = [
   {
     path:'regsucess',
     component: RegsucessComponent
+  },
+  {
+    path:'cart',
+    component: CartComponent
+  },
+  {
+    path:'checkout',
+    component: CheckoutComponent
+  },
+  {
+    path:'payment',
+    component: PaymentComponent
+  },
+  {
+    path:'orderplaced',
+    component: OrderplacedComponent
   }
  
 ];

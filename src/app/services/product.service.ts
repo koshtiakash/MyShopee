@@ -4,7 +4,7 @@ import{Product} from '../models/product'
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class ProductService { 
 
  products:Product[]=[
    new Product(101, "Redmi 8A Dual (Sky White)", "abc",8379, "../../assets/mi-redmi-8a.jpeg"),

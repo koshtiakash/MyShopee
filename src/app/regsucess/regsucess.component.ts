@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-regsucess',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegsucessComponent implements OnInit {
 
-  constructor() { }
+  // userlist:any= []
+  constructor(private apiservice: UserService) { }
 
   ngOnInit(): void {
+
+    // this.apiservice.getdata().subscribe((userdata)=>{
+    //   this.userlist=userdata;
+    //   console.log(this.userlist)
+    // })
   }
 
 }

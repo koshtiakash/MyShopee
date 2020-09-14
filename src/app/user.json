@@ -1,3 +1,49 @@
 {
-    "user":[]
+  "userdata": [
+    {
+      "name": "Akash",
+      "username": "akash",
+      "email": "koshtiakah22@gmail.com",
+      "mobileno": 9595162225,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 1
+    },
+    {
+      "name": "Akash",
+      "username": "akash",
+      "email": "koshtiakah22@gmail.com",
+      "mobileno": 9595162225,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 2
+    },
+    {
+      "name": "rahul",
+      "username": "rahuul",
+      "email": "koshtiakaSh22@gmail.com",
+      "mobileno": 456452,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 3
+    },
+    {
+      "name": "Akash",
+      "username": "DEN20116580",
+      "email": "koshtiakaSh22@gmail.com",
+      "mobileno": 123,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 4
+    },
+    {
+      "name": "saurabh",
+      "username": "saurabh",
+      "email": "koshtiakah22@gmail.com",
+      "mobileno": 123,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 5
+    }
+  ]
 }

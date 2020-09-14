@@ -15,6 +15,14 @@ import { ProductItemComponent } from './product/product-item/product-item.compon
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegsucessComponent } from './regsucess/regsucess.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './services/user.service';
+import { FooterComponent } from './footer/footer.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentComponent } from './payment/payment.component';
+import { OrderplacedComponent } from './orderplaced/orderplaced.component';
+
 
 
 @NgModule({
@@ -28,7 +36,13 @@ import { HttpClientModule } from '@angular/common/http';
     ProductItemComponent,
     HomepageComponent,
     RegsucessComponent,
-    
+    FooterComponent,
+    CartComponent,
+    CartItemComponent,
+    CheckoutComponent,
+    PaymentComponent,
+    OrderplacedComponent
+
     
     
   ],
@@ -41,7 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
 
     
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 
