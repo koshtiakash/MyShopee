@@ -12,6 +12,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderplacedComponent } from './orderplaced/orderplaced.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -57,6 +58,7 @@ const routes: Routes = [
     path:'orderplaced',
     component: OrderplacedComponent
   }
+  
  
 ];
 

@@ -10,18 +10,18 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { UserregComponent } from './userreg/userreg.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NavComponent } from './nav/nav.component';
-import { ProductComponent } from './product/product.component';
-import { ProductItemComponent } from './product/product-item/product-item.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegsucessComponent } from './regsucess/regsucess.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserService } from './services/user.service';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderplacedComponent } from './orderplaced/orderplaced.component';
+import { ProductComponent } from './product/product.component';
+import { ProductItemComponent } from './product/product-item/product-item.component';
+import { ViewuserComponent } from './viewuser/viewuser.component';
 
 
 
@@ -32,8 +32,6 @@ import { OrderplacedComponent } from './orderplaced/orderplaced.component';
     UserregComponent,
     AdminloginComponent,
     NavComponent,
-    ProductComponent,
-    ProductItemComponent,
     HomepageComponent,
     RegsucessComponent,
     FooterComponent,
@@ -41,7 +39,10 @@ import { OrderplacedComponent } from './orderplaced/orderplaced.component';
     CartItemComponent,
     CheckoutComponent,
     PaymentComponent,
-    OrderplacedComponent
+    OrderplacedComponent,
+    ProductComponent,
+    ProductItemComponent,
+    ViewuserComponent
 
     
     
@@ -55,7 +56,7 @@ import { OrderplacedComponent } from './orderplaced/orderplaced.component';
 
     
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms'
 import { UserService } from 'src/app/services/user.service'
 import { Router } from '@angular/router'
-import { User } from '../models/user'
+
 
 /** 
  * 
@@ -30,9 +30,8 @@ function passwordMatchValidator(form) {
 export class UserregComponent implements OnInit {
 
   registerForm: FormGroup
-  user: User[] = []
-
-  constructor(private apiService: UserService,
+ 
+  constructor(private userservice: UserService,
     private router: Router
 
   ) { }
@@ -55,11 +54,12 @@ export class UserregComponent implements OnInit {
 
   register() {
     console.log(this.registerForm.value)
-
-    this.apiService.createUser(this.registerForm.value).subscribe
-      (data => {
-        this.router.navigate(['/regsucess']);
-      })
+    this.userservice.addUser(this.registerForm.value).subscribe((res)=>{
+      console.log("data added",res)
+      alert("user Registerd sucessfully")
+      this.router.navigateByUrl("/login-page")
+    })
+  
 
   }
 }

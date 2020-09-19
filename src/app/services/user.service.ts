@@ -1,24 +1,22 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { Observable } from 'rxjs';
-import {User} from '../models/user';
-//import {ApiResponse} from 'src/app/models/api-response'
 
+const api ="http://localhost/Myshopee/";
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
   
-  createUser(user: User){
-    return this.http.post("http://localhost:5555/userdata/",user)
-    }
 
   constructor(private http: HttpClient) { }
-   
-  // getdata(){
-  //   return this.http.get("http://localhost/Myshopee/fetch.php")
-  // }
- 
-   
 
+  addUser(data)
+  {
+    return this.http.post(api + 'adduser.php',data);
+  }
+   
+  getUser()
+  {
+    return this.http.get(api + 'fetchuser.php');
+  }
 }

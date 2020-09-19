@@ -1,7 +1,8 @@
-import { Component, OnInit ,Input} from '@angular/core';
-import {Product} from 'src/app/models/product'
-import { MessangerService } from 'src/app/services/messanger.service';
+import { Component, OnInit,Input} from '@angular/core';
+import {Product} from 'src/app/models/product';
+import {MessangerService} from 'src/app/services/messanger.service'
 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-item',
@@ -9,21 +10,20 @@ import { MessangerService } from 'src/app/services/messanger.service';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
-  handleAddToCart() {
-    this.msg.sendMsg(this.productItem)
-    window.alert('Your product has been added to the cart!');
-  }
 
   @Input() productItem: Product
 
-  constructor(private msg:MessangerService) { }
+
+  constructor(private msg: MessangerService,private rout:Router) { }
 
   ngOnInit(): void {
   }
-  // handleAddToCart() {
-  //   this.msg.sendMsg(this.productItem)
-  //   window.alert('Your product has been added to the cart!');
-  // }
+  handleAddToCart() {
+    this.msg.sendMsg(this.productItem)
+    window.alert('Your product has been added to the cart!');
+  
+
+    
+  }
 
 }
-

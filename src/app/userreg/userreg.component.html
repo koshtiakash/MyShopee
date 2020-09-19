@@ -14,6 +14,7 @@
                         [ngClass]="{'is-invalid': registerForm.get('name').touched && 
                         registerForm.get('name').invalid}"
                         formControlName="name"
+                        name="name"
                         >
                     <span class="invalid-feedback">Name is Required</span>
                     </div> 
@@ -25,7 +26,7 @@
                         [ngClass]="{'is-invalid': registerForm.get('username').touched && 
                         registerForm.get('username').invalid}"
                         formControlName="username"
-                        
+                        name="username"
                         >
                         <span class="invalid-feedback">Username is Required</span>
                     </div> 
@@ -37,7 +38,7 @@
                         [ngClass]="{'is-invalid': registerForm.get('email').touched && 
                         registerForm.get('email').invalid}"
                         formControlName="email"
-                        
+                        name="email"
                         >
                         <span *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" class="invalid-feedback"> 
                         <div *ngIf="registerForm.get('email').errors.required" >Email is Required</div>
@@ -52,7 +53,7 @@
                         [ngClass]="{'is-invalid': registerForm.get('mobileno').touched && 
                         registerForm.get('mobileno').invalid}"
                         formControlName="mobileno"
-                        
+                        name="mobileno"
                         >
                         <span class="invalid-feedback">Mobile Number is Required</span>
                     </div> 
@@ -65,6 +66,7 @@
                         [ngClass]="{'is-invalid': registerForm.get('password').touched && 
                         registerForm.get('password').invalid}"
                         formControlName="password"
+                        name="password"
                         >
                         <span *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid" class="invalid-feedback"> 
                         <div *ngIf="registerForm.get('password').errors.required" >Password is Required</div>
